@@ -3,6 +3,7 @@ import dotenv from "dotenv"
 import cors from "cors"
 
 import accountRoutes from "./routes/accountRoutes"
+import courseRoutes from "./routes/courseRoutes"
 
 import swaggerUi from "swagger-ui-express"
 import { connect } from "./service/database"
@@ -34,9 +35,10 @@ app.use(
 )
 
 app.use("/api/account", accountRoutes)
+app.use("/api/course", courseRoutes)
 
 app.get("/", (req: Request, res: Response) => {
-  res.send("Express + TypeScript Server")
+  res.send("Curse WebSite")
 })
 
 app.listen(port, () => {

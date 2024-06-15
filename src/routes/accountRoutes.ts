@@ -40,7 +40,6 @@ router.delete("/delete/:id", async (req: Request, res: Response) => {
   //return res.status(response.error ? 400 : 200).send(response)
 //})
 
-
 router.get("/queryAccount/:name", async (req: Request, res: Response) => {
   const response = await controller.getByName(req.params.name, req.body)
 
