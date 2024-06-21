@@ -13,7 +13,7 @@ dotenv.config()
 const app: Express = express()
 
 const port = process.env.PORT
-const databaseUrl = process.env.DATABASE_URL || "mongodb+srv://milenaleonardi:c3bGlH4UQsucfHIH@cluster0.mglgddj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+const databaseUrl = process.env.DATABASE_URL || ""
 
 connect(databaseUrl)
 
