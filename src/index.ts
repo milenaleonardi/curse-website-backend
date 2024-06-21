@@ -18,7 +18,7 @@ const databaseUrl = process.env.DATABASE_URL || ""
 connect(databaseUrl)
 
 const corsOptions = { 
-  origin : ['http://localhost:3001'], 
+  origin : ['http://localhost:3000'], 
 } 
  
 app.use(cors(corsOptions)) 
